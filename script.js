@@ -7,7 +7,7 @@ function countdown() {
     var timeLeft = 75;
 
     var timeInterval = setInterval(function() {
-        if(timeLeft > 0) {
+        if(timeLeft > -1) {
             timerEl.textContent = 'Time: ' + timeLeft;
             timeLeft--;
         }
