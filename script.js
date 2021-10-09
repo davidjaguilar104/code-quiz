@@ -1,8 +1,11 @@
-
-
-
 // variable pointing to the timer
 var timerEl = document.getElementById("timer");
+
+// variable pointing to the start quiz button 
+var startButtonEl = document.getElementById("start-quiz");
+
+
+
 function countdown() {
     var timeLeft = 75;
 
@@ -14,9 +17,6 @@ function countdown() {
     }, 1000);
 }
 
-
-// variable pointing to the start quiz button 
-var startButtonEl = document.getElementById("start-quiz");
 startButtonEl.addEventListener("click" , function() {
     countdown();
 });
