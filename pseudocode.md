@@ -4,8 +4,10 @@ Worry about styling later
 
 
 Tasks needed to complete
-1. Clicking the start button starts to decrement the 75 thats initially there, as well as displaying the first question
-
+1. Clicking the start button starts timer countdown
 - add event listener to the button to start the quiz 
-- add a function to that event listener and have it start the counting down on the timer as well as display the first question
--display the first question and hide the original html
+- add a function to that event listener and have it start the counting down on the timer 
+
+2. When start quiz button is clicked display the first question and get rid of starting content
+- create function that dynamically generates the questions and answers
+- this function also gets rid of initial content displayed when page is loaded 
