@@ -1,3 +1,6 @@
+// timer
+var timeLeft = 75;
+
 // variable pointing to the timer
 var timerEl = document.getElementById("timer");
 
@@ -43,7 +46,7 @@ function createQuestionOne() {
 
 
 function countdown() {
-    var timeLeft = 75;
+    
 
     var timeInterval = setInterval(function() {
         if(timeLeft > -1) {
