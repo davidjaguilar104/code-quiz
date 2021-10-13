@@ -46,8 +46,6 @@ function createQuestionOne() {
 
 
 function countdown() {
-    
-
     var timeInterval = setInterval(function() {
         if(timeLeft > -1) {
             timerEl.textContent = 'Time: ' + timeLeft;
@@ -70,4 +68,5 @@ questionIsTrue.addEventListener("click", function () {
 questionIsFalse.addEventListener("click", function() {
     alert("That is incorrect");
     questionOneEl.remove();
+    timeLeft -= 30;
 })
