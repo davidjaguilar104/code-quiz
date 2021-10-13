@@ -4,6 +4,9 @@ var timerEl = document.getElementById("timer");
 // variable pointing to the start quiz button 
 var startButtonEl = document.getElementById("start-quiz");
 
+// variable pointing to initial page
+var startPageEl = document.getElementById("initial-page");
+
 
 
 function countdown() {
@@ -19,4 +22,5 @@ function countdown() {
 
 startButtonEl.addEventListener("click" , function() {
     countdown();
+    startPageEl.remove();
 });
