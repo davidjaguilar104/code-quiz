@@ -55,6 +55,10 @@ function createQuestionOne() {
     mainEl.appendChild(questionOneEl);
 }
 
+
+
+
+
 // variable pointing to question two element
 var questionTwoEl = document.createElement("div");
 
@@ -70,7 +74,7 @@ function createQuestionTwo() {
     
 
     questionTwoEl.innerHTML = 
-    "<p class='question-font'> The condition in an if statement is enclosed in paretheses . </p>"
+    "<p class='question-font'> The condition in an if statement is enclosed in paretheses. </p>"
 
     
     questionTwoIsTrue.textContent = "True";
@@ -90,6 +94,42 @@ function createQuestionTwo() {
 
 
 
+
+// variable pointing to question two element
+var questionThreeEl = document.createElement("div");
+
+// variable pointing to true 
+var questionThreeIsTrue = document.createElement("div");
+
+// variable pointing to false
+var questionThreeIsFalse = document.createElement("div");
+
+
+// function that creates question two
+function createQuestionThree() {
+    
+
+    questionThreeEl.innerHTML = 
+    "<p class='question-font'> An array is enclosed in square brackets. </p>"
+
+    
+    questionThreeIsTrue.textContent = "True";
+    questionThreeIsTrue.className = "question-answer-true";
+    questionThreeEl.appendChild(questionThreeIsTrue);
+
+
+    
+    questionThreeIsFalse.textContent = "False";
+    questionThreeIsFalse.className = "question-answer-false";
+    questionThreeEl.appendChild(questionThreeIsFalse);
+
+
+
+    mainEl.appendChild(questionThreeEl);
+}
+
+
+
 startButtonEl.addEventListener("click" , function() {
     countdown();
     startPageEl.remove();
@@ -105,17 +145,30 @@ questionIsTrue.addEventListener("click", function () {
 questionIsFalse.addEventListener("click", function() {
     alert("That is incorrect");
     questionOneEl.remove();
-    timeLeft -= 30;
+    timeLeft -= 25;
     createQuestionTwo();
 })
 
 questionTwoIsTrue.addEventListener("click", function () {
     alert("That is correct");
     questionTwoEl.remove();
+    createQuestionThree();
 })
 
 questionTwoIsFalse.addEventListener("click", function() {
     alert("That is incorrect");
     questionTwoEl.remove();
-    timeLeft -= 30;
+    timeLeft -= 25;
+    createQuestionThree();
+})
+
+questionThreeIsTrue.addEventListener("click", function () {
+    alert("That is correct");
+    questionThreeEl.remove();
+})
+
+questionThreeIsFalse.addEventListener("click", function() {
+    alert("That is incorrect");
+    questionThreeEl.remove();
+    timeLeft -= 25;
 })
