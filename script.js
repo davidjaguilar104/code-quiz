@@ -171,4 +171,7 @@ questionThreeIsFalse.addEventListener("click", function() {
     alert("That is incorrect");
     questionThreeEl.remove();
     timeLeft -= 25;
+    if(timeLeft < 20 || timeLeft === 20) {
+        timerEl.remove(); 
+    } 
 })
