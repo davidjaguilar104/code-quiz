@@ -16,8 +16,16 @@ function createQuestionOne() {
     questionOneEl.innerHTML = 
     "<p class='question-font'> String is a commonly used data type. </p>"
 
+    var questionIsTrue = document.createElement("div");
+    questionIsTrue.textContent = "True";
+    questionIsTrue.className = "question-answer-true";
+    questionOneEl.appendChild(questionIsTrue);
 
 
+    var questionIsFalse = document.createElement("div");
+    questionIsFalse.textContent = "False";
+    questionIsFalse.className = "question-answer-false";
+    questionOneEl.appendChild(questionIsFalse);
 
 
 

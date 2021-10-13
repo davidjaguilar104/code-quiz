@@ -21,3 +21,13 @@ div {
     color: white;
     font-size: 40px;
 }
+
+.question-answer-true {
+    color: white;
+    font-size: 50px;
+}
+
+.question-answer-false {
+    color: white;
+    font-size: 50px;
+}
