@@ -61,8 +61,10 @@ startButtonEl.addEventListener("click" , function() {
 
 questionIsTrue.addEventListener("click", function () {
     alert("That is correct");
+    questionOneEl.remove();
 })
 
 questionIsFalse.addEventListener("click", function() {
-    alert("That is incorrect")
+    alert("That is incorrect");
+    questionOneEl.remove();
 })

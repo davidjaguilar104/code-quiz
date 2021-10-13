@@ -11,3 +11,8 @@ Tasks needed to complete
 2. When start quiz button is clicked display the first question and get rid of starting content
 - create function that dynamically generates the questions and answers
 - this function also gets rid of initial content displayed when page is loaded 
+
+3. Add function to remove question and present a new one when answered correct 
+
+
+4. Add a function to remove question, present a new one, and deduct 10 seconds from the time when answered incorrect 
