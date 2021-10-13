@@ -64,5 +64,5 @@ questionIsTrue.addEventListener("click", function () {
 })
 
 questionIsFalse.addEventListener("click", function() {
-
+    alert("That is incorrect")
 })
