@@ -4,7 +4,7 @@ Worry about styling later
 
 
 Tasks needed to complete
-1. Clicking the start button starts timer countdown
+<!-- 1. Clicking the start button starts timer countdown
 - add event listener to the button to start the quiz 
 - add a function to that event listener and have it start the counting down on the timer 
 
@@ -20,5 +20,7 @@ Tasks needed to complete
 - deducted time by setting timeLeft -= 30;
 
 5. Build the question 2
-- generate a question dynamically after question one is answered and alert is clicked
--
+- generate a question dynamically after question one is answered and alert is clicked -->
+
+Building questions is the same as the first one just change element names to number of current question
+

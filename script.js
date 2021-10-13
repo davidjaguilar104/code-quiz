@@ -59,10 +59,10 @@ function createQuestionOne() {
 var questionTwoEl = document.createElement("div");
 
 // variable pointing to true 
-var questionIsTrue = document.createElement("div");
+var questionTwoIsTrue = document.createElement("div");
 
 // variable pointing to false
-var questionIsFalse = document.createElement("div");
+var questionTwoIsFalse = document.createElement("div");
 
 
 // function that creates question two
@@ -73,15 +73,15 @@ function createQuestionTwo() {
     "<p class='question-font'> The condition in an if statement is enclosed in paretheses . </p>"
 
     
-    questionIsTrue.textContent = "True";
-    questionIsTrue.className = "question-answer-true";
-    questionTwoEl.appendChild(questionIsTrue);
+    questionTwoIsTrue.textContent = "True";
+    questionTwoIsTrue.className = "question-answer-true";
+    questionTwoEl.appendChild(questionTwoIsTrue);
 
 
     
-    questionIsFalse.textContent = "False";
-    questionIsFalse.className = "question-answer-false";
-    questionTwoEl.appendChild(questionIsFalse);
+    questionTwoIsFalse.textContent = "False";
+    questionTwoIsFalse.className = "question-answer-false";
+    questionTwoEl.appendChild(questionTwoIsFalse);
 
 
 
@@ -107,4 +107,15 @@ questionIsFalse.addEventListener("click", function() {
     questionOneEl.remove();
     timeLeft -= 30;
     createQuestionTwo();
+})
+
+questionTwoIsTrue.addEventListener("click", function () {
+    alert("That is correct");
+    questionTwoEl.remove();
+})
+
+questionTwoIsFalse.addEventListener("click", function() {
+    alert("That is incorrect");
+    questionTwoEl.remove();
+    timeLeft -= 30;
 })
