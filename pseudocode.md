@@ -18,3 +18,7 @@ Tasks needed to complete
 4. Add a function to remove question, present a new one, and deduct 10 seconds from the time when answered incorrect 
 - added remove() to questionOneEl
 - deducted time by setting timeLeft -= 30;
+
+5. Build the question 2
+- generate a question dynamically after question one is answered and alert is clicked
+-

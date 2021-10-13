@@ -1,6 +1,16 @@
 // timer
 var timeLeft = 75;
 
+// countdown function
+function countdown() {
+    var timeInterval = setInterval(function() {
+        if(timeLeft > -1) {
+            timerEl.textContent = 'Time: ' + timeLeft;
+            timeLeft--;
+        }
+    }, 1000);
+}
+
 // variable pointing to the timer
 var timerEl = document.getElementById("timer");
 
@@ -22,6 +32,7 @@ var questionIsTrue = document.createElement("div");
 // variable pointing to false
 var questionIsFalse = document.createElement("div");
 
+// function that creates question one
 function createQuestionOne() {
     
 
@@ -44,15 +55,40 @@ function createQuestionOne() {
     mainEl.appendChild(questionOneEl);
 }
 
+// variable pointing to question two element
+var questionTwoEl = document.createElement("div");
 
-function countdown() {
-    var timeInterval = setInterval(function() {
-        if(timeLeft > -1) {
-            timerEl.textContent = 'Time: ' + timeLeft;
-            timeLeft--;
-        }
-    }, 1000);
+// variable pointing to true 
+var questionIsTrue = document.createElement("div");
+
+// variable pointing to false
+var questionIsFalse = document.createElement("div");
+
+
+// function that creates question two
+function createQuestionTwo() {
+    
+
+    questionTwoEl.innerHTML = 
+    "<p class='question-font'> The condition in an if statement is enclosed in paretheses . </p>"
+
+    
+    questionIsTrue.textContent = "True";
+    questionIsTrue.className = "question-answer-true";
+    questionTwoEl.appendChild(questionIsTrue);
+
+
+    
+    questionIsFalse.textContent = "False";
+    questionIsFalse.className = "question-answer-false";
+    questionTwoEl.appendChild(questionIsFalse);
+
+
+
+    mainEl.appendChild(questionTwoEl);
 }
+
+
 
 startButtonEl.addEventListener("click" , function() {
     countdown();
@@ -63,10 +99,12 @@ startButtonEl.addEventListener("click" , function() {
 questionIsTrue.addEventListener("click", function () {
     alert("That is correct");
     questionOneEl.remove();
+    createQuestionTwo();
 })
 
 questionIsFalse.addEventListener("click", function() {
     alert("That is incorrect");
     questionOneEl.remove();
     timeLeft -= 30;
+    createQuestionTwo();
 })
