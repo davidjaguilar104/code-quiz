@@ -24,3 +24,4 @@ Tasks needed to complete
 
 Building questions is the same as the first one just change element names to number of current question
 
+6. Going to have to have to end quiz when timer hits zero or no more questions left
