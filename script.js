@@ -10,19 +10,28 @@ var startPageEl = document.getElementById("initial-page");
 // variable pointing to the main element 
 var mainEl = document.getElementById("main-page")
 
+// variable pointing to question element
+var questionOneEl = document.createElement("div");
+
+// variable pointing to true 
+var questionIsTrue = document.createElement("div");
+
+// variable pointing to false
+var questionIsFalse = document.createElement("div");
+
 function createQuestionOne() {
-    var questionOneEl = document.createElement("div");
+    
 
     questionOneEl.innerHTML = 
     "<p class='question-font'> String is a commonly used data type. </p>"
 
-    var questionIsTrue = document.createElement("div");
+    
     questionIsTrue.textContent = "True";
     questionIsTrue.className = "question-answer-true";
     questionOneEl.appendChild(questionIsTrue);
 
 
-    var questionIsFalse = document.createElement("div");
+    
     questionIsFalse.textContent = "False";
     questionIsFalse.className = "question-answer-false";
     questionOneEl.appendChild(questionIsFalse);
