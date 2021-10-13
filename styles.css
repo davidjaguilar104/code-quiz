@@ -10,7 +10,11 @@ section {
 }
 
 div {
-    background-color: red;
-    width: 50vw;
+    background-color: black;
     height: 50vh;
+}
+
+.question-font {
+    color: white;
+    font-size: 40px;
 }

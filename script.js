@@ -12,6 +12,15 @@ var mainEl = document.getElementById("main-page")
 
 function createQuestionOne() {
     var questionOneEl = document.createElement("div");
+
+    questionOneEl.innerHTML = 
+    "<p class='question-font'> String is a commonly used data type. </p>"
+
+
+
+
+
+
     mainEl.appendChild(questionOneEl);
 }
 
