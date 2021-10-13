@@ -58,3 +58,11 @@ startButtonEl.addEventListener("click" , function() {
     startPageEl.remove();
     createQuestionOne();
 });
+
+questionIsTrue.addEventListener("click", function () {
+    alert("That is correct");
+})
+
+questionIsFalse.addEventListener("click", function() {
+
+})
