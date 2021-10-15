@@ -1,15 +1,6 @@
 // timer
 var timeLeft = 75;
 
-// countdown function
-function countdown() {
-    var timeInterval = setInterval(function() {
-        if(timeLeft > -1) {
-            timerEl.textContent = 'Time: ' + timeLeft;
-            timeLeft--;
-        }
-    }, 1000);
-}
 
 // variable pointing to the timer
 var timerEl = document.getElementById("timer");
@@ -131,7 +122,14 @@ function createQuestionThree() {
 
 
 startButtonEl.addEventListener("click" , function() {
-    countdown();
+    // countdown function
+    var timeInterval = setInterval(function() {
+        if(timeLeft > -1) {
+            timerEl.textContent = 'Time: ' + timeLeft;
+            timeLeft--;
+        }
+    }, 1000);
+
     startPageEl.remove();
     createQuestionOne();
 });
