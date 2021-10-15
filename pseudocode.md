@@ -26,5 +26,6 @@ Building questions is the same as the first one just change element names to num
 
 6. Going to have to have to end quiz when timer hits zero or no more questions left
 - clearInterval might be useful check other timer functions as well
-- handle all questions answered first
-- if user selects true for all 3 answers stop timer
+- need to stop timer when all questions answered
+- need to handle when user gets all three false and the time going into negatives 
+- 
