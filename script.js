@@ -3,6 +3,14 @@ var timeLeft = 75;
 
 var timeInterval;
 
+var userInitials = document.getElementById("user-initials");
+
+// object for highscore and initials
+var highscore = [{
+    initials: userInitials,
+    score: timeLeft
+}]
+
 // variable pointing to the timer
 var timerEl = document.getElementById("timer");
 
@@ -130,6 +138,7 @@ var initialsFormEl = document.getElementById("initials")
 var submitButtonEl = document.createElement("button");
 
 var inputEl = document.createElement("input");
+inputEl.setAttribute("id", "user-initials");
 
 // function that creates the all done page
 function showAllDonePage() {
@@ -139,12 +148,13 @@ function showAllDonePage() {
 
     submitButtonEl.textContent = "Submit";
 
+
     initialsFormEl.appendChild(inputEl)
     initialsFormEl.appendChild(submitButtonEl);   
     allDoneEl.appendChild(initialsFormEl);
 
     submitButtonEl.addEventListener("click", function() {
-        localStorage.setItem("highscore", JSON.stringify(timeLeft))
+        localStorage.setItem("highscore", JSON.stringify(highscore))
     });
 }
 
