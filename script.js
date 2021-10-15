@@ -142,6 +142,10 @@ function showAllDonePage() {
     initialsFormEl.appendChild(inputEl)
     initialsFormEl.appendChild(submitButtonEl);   
     allDoneEl.appendChild(initialsFormEl);
+
+    submitButtonEl.addEventListener("click", function() {
+        localStorage.setItem("highscore", JSON.stringify(timeLeft))
+    });
 }
 
 startButtonEl.addEventListener("click" , function() {
