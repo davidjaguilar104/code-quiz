@@ -143,7 +143,7 @@ questionIsTrue.addEventListener("click", function () {
 questionIsFalse.addEventListener("click", function() {
     alert("That is incorrect");
     questionOneEl.remove();
-    timeLeft -= 25;
+    timeLeft -= 20;
     createQuestionTwo();
 })
 
@@ -156,7 +156,7 @@ questionTwoIsTrue.addEventListener("click", function () {
 questionTwoIsFalse.addEventListener("click", function() {
     alert("That is incorrect");
     questionTwoEl.remove();
-    timeLeft -= 25;
+    timeLeft -= 20;
     createQuestionThree();
 })
 
@@ -169,8 +169,5 @@ questionThreeIsTrue.addEventListener("click", function () {
 questionThreeIsFalse.addEventListener("click", function() {
     alert("That is incorrect");
     questionThreeEl.remove();
-    timeLeft -= 25;
-    // if(timeLeft < 20 || timeLeft === 20) {
-    //     timerEl.remove(); 
-    // } 
+    timeLeft -= 20;
 })

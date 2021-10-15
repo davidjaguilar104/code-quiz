@@ -22,11 +22,17 @@ Tasks needed to complete
 5. Build the question 2
 - generate a question dynamically after question one is answered and alert is clicked -->
 
-Building questions is the same as the first one just change element names to number of current question
+6. Build the all done page 
+- 
 
-6. Going to have to have to end quiz when timer hits zero or no more questions left
+
+
+
+
+
+7. Going to have to have to end quiz when timer hits zero or no more questions left
 - clearInterval might be useful check other timer functions as well
 - need to stop timer when all questions answered
-- need to handle when user gets all three false and the time going into negatives 
+- need to handle when user gets timer to hit 0
 - look at timer in class repo for clearing interval
 - check in all questions the time
