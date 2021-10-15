@@ -1,6 +1,7 @@
 // timer
 var timeLeft = 75;
 
+var timeInterval;
 
 // variable pointing to the timer
 var timerEl = document.getElementById("timer");
@@ -130,7 +131,7 @@ function showAllDonePage() {
 
 startButtonEl.addEventListener("click" , function() {
     // countdown function
-    var timeInterval = setInterval(function() {
+    timeInterval = setInterval(function() {
         if(timeLeft > -1) {
             timerEl.textContent = 'Time: ' + timeLeft;
             timeLeft--;
@@ -171,7 +172,8 @@ questionThreeIsTrue.addEventListener("click", function () {
     alert("That is correct");
     questionThreeEl.remove();
     showAllDonePage();
-    // timerEl.remove(); removes the timer after displaying final score
+    timerEl.remove(); // removes the timer after displaying final score
+    // clearInterval(timeInterval); stops timer weird, cause alerts?
 })
 
 questionThreeIsFalse.addEventListener("click", function() {
@@ -179,5 +181,5 @@ questionThreeIsFalse.addEventListener("click", function() {
     questionThreeEl.remove();
     timeLeft -= 20;
     showAllDonePage();
-    // timerEl.remove(); removes the timer after displaying final score
+    timerEl.remove(); // removes the timer after displaying final score
 })
