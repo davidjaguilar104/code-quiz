@@ -139,6 +139,8 @@ var submitButtonEl = document.createElement("button");
 
 var inputEl = document.createElement("input");
 inputEl.setAttribute("id", "user-initials");
+inputEl.setAttribute("type", "text");
+inputEl.setAttribute("placeholder", "Enter your initials");
 
 // function that creates the all done page
 function showAllDonePage() {
@@ -147,6 +149,7 @@ function showAllDonePage() {
     initialsFormEl.textContent = "Enter your initials: " 
 
     submitButtonEl.textContent = "Submit";
+    
 
 
     initialsFormEl.appendChild(inputEl)
