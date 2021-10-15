@@ -28,4 +28,4 @@ Building questions is the same as the first one just change element names to num
 - clearInterval might be useful check other timer functions as well
 - need to stop timer when all questions answered
 - need to handle when user gets all three false and the time going into negatives 
-- 
+- look at timer in class repo for clearing interval
