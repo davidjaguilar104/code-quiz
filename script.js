@@ -123,10 +123,25 @@ function createQuestionThree() {
 // variable pointing to all done page
 var allDoneEl = document.getElementById("all-done");
 
+// variable pointing to initials form element
+var initialsFormEl = document.getElementById("initials")
+
+// variable pointing to submit btn
+var submitButtonEl = document.createElement("button");
+
+var inputEl = document.createElement("input");
 
 // function that creates the all done page
 function showAllDonePage() {
     allDoneEl.textContent = "All Done! Your final score is " + timeLeft;
+
+    initialsFormEl.textContent = "Enter your initials: " 
+
+    submitButtonEl.textContent = "Submit";
+
+    initialsFormEl.appendChild(inputEl)
+    initialsFormEl.appendChild(submitButtonEl);   
+    allDoneEl.appendChild(initialsFormEl);
 }
 
 startButtonEl.addEventListener("click" , function() {
