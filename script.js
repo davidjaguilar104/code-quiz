@@ -9,7 +9,7 @@ var userInitials = document.getElementById("user-initials");
 var highscore = [{
     initials: userInitials,
     score: timeLeft
-}]
+}];
 
 // variable pointing to the timer
 var timerEl = document.getElementById("timer");
