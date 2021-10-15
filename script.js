@@ -74,7 +74,7 @@ function createQuestionTwo() {
     
 
     questionTwoEl.innerHTML = 
-    "<p class='question-font'> The condition in an if statement is enclosed in paretheses. </p>"
+    "<p class='question-font'> The condition in an if statement is enclosed in parentheses. </p>"
 
     
     questionTwoIsTrue.textContent = "True";
@@ -165,6 +165,7 @@ questionTwoIsFalse.addEventListener("click", function() {
 questionThreeIsTrue.addEventListener("click", function () {
     alert("That is correct");
     questionThreeEl.remove();
+    
 })
 
 questionThreeIsFalse.addEventListener("click", function() {
