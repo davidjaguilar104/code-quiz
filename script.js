@@ -119,7 +119,14 @@ function createQuestionThree() {
     mainEl.appendChild(questionThreeEl);
 }
 
+// variable pointing to all done page
+var allDoneEl = document.getElementById("all-done");
 
+
+// function that creates the all done page
+function showAllDonePage() {
+    allDoneEl.textContent = "All Done! Your final score is " + timeLeft;
+}
 
 startButtonEl.addEventListener("click" , function() {
     // countdown function
@@ -163,7 +170,7 @@ questionTwoIsFalse.addEventListener("click", function() {
 questionThreeIsTrue.addEventListener("click", function () {
     alert("That is correct");
     questionThreeEl.remove();
-    
+    showAllDonePage();
 })
 
 questionThreeIsFalse.addEventListener("click", function() {
