@@ -171,10 +171,13 @@ questionThreeIsTrue.addEventListener("click", function () {
     alert("That is correct");
     questionThreeEl.remove();
     showAllDonePage();
+    // timerEl.remove(); removes the timer after displaying final score
 })
 
 questionThreeIsFalse.addEventListener("click", function() {
     alert("That is incorrect");
     questionThreeEl.remove();
     timeLeft -= 20;
+    showAllDonePage();
+    // timerEl.remove(); removes the timer after displaying final score
 })
