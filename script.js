@@ -184,6 +184,12 @@ function showAllDonePage() {
         localStorage.setItem("highscore", JSON.stringify(highscore));
 
         allDoneEl.remove();
+
+        function showScorePage() {
+                
+        }
+
+        showScorePage();
     });
 }
 
