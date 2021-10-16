@@ -168,9 +168,7 @@ function showAllDonePage() {
 
         localStorage.setItem("highscore", JSON.stringify(highscore));
 
-        allDoneEl.removeChild(initialsFormEl);
-
-        allDoneEl.appendChild(startPageEl);
+        allDoneEl.textContent = "Refresh the browser and click start quiz to take again!"
     });
 }
 
