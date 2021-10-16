@@ -168,7 +168,9 @@ function showAllDonePage() {
 
         localStorage.setItem("highscore", JSON.stringify(highscore));
 
-        allDoneEl.remove();
+        allDoneEl.removeChild(initialsFormEl);
+
+        allDoneEl.appendChild(startPageEl);
     });
 }
 
