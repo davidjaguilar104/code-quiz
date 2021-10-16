@@ -22,17 +22,12 @@ Tasks needed to complete
 5. Build the question 2
 - generate a question dynamically after question one is answered and alert is clicked -->
 
-6. Build the all done page 
-- 
-
-
-
-
-
-
 7. Going to have to have to end quiz when timer hits zero or no more questions left
 - clearInterval might be useful check other timer functions as well
 - need to stop timer when all questions answered
 - need to handle when user gets timer to hit 0
 - look at timer in class repo for clearing interval
 - check in all questions the time
+
+8. View High Score instead of view high scores 
+- only store one high score

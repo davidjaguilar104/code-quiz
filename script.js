@@ -214,8 +214,8 @@ questionThreeIsTrue.addEventListener("click", function () {
     alert("That is correct");
     questionThreeEl.remove();
     showAllDonePage();
+    clearInterval(timeInterval);
     timerEl.remove(); // removes the timer after displaying final score
-    // clearInterval(timeInterval); stops timer weird, cause alerts?
 })
 
 questionThreeIsFalse.addEventListener("click", function() {
@@ -223,5 +223,6 @@ questionThreeIsFalse.addEventListener("click", function() {
     questionThreeEl.remove();
     timeLeft -= 20;
     showAllDonePage();
+    clearInterval(timeInterval);
     timerEl.remove(); // removes the timer after displaying final score
 })
