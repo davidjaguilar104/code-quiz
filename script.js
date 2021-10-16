@@ -3,13 +3,9 @@ var timeLeft = 75;
 
 var timeInterval;
 
-var userInitials = document.getElementById("user-initials");
+window.localStorage.getItem("highscore");
 
-// object for highscore and initials
-var highscore = [{
-    initials: userInitials,
-    score: timeLeft
-}];
+console.log("From local storage")
 
 // variable pointing to the timer
 var timerEl = document.getElementById("timer");
@@ -156,7 +152,21 @@ function showAllDonePage() {
     initialsFormEl.appendChild(submitButtonEl);   
     allDoneEl.appendChild(initialsFormEl);
 
-    submitButtonEl.addEventListener("click", function() {
+
+
+    submitButtonEl.addEventListener("click", function(event) {
+
+        var userInitials = document.getElementById("user-initials");
+
+
+        // object for highscore and initials
+        var highscore = [{
+            initials: userInitials.value.trim(),
+            score: timeLeft
+        }];
+    
+        event.preventDefault();
+
         localStorage.setItem("highscore", JSON.stringify(highscore))
     });
 }
