@@ -6,7 +6,7 @@ I wanted to build a code quiz for users to test their JavaScript knowledge! This
 ### Application 
 ![alt text](code-quiz-live.png)
 
-[View the Live Site!](https://davidjaguilar104.github.io/code-quiz/)
+[Take the Code Quiz!](https://davidjaguilar104.github.io/code-quiz/)
 
 #### Technologies Used
 * HTML
