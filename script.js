@@ -155,16 +155,31 @@ function showAllDonePage() {
 
     submitButtonEl.addEventListener("click", function(event) {
 
+        event.preventDefault();
+
         var userInitials = document.getElementById("user-initials");
 
-
         // object for highscore and initials
-        var highscore = [{
+        var highscore = {
             initials: userInitials.value.trim(),
             score: timeLeft
-        }];
-    
-        event.preventDefault();
+        };
+
+        const MAX_HIGH_SCORES = 3;
+
+        const highScoresArray = JSON.parse(localStorage.getItem("highScoresArray")) || [];
+
+        highScoresArray.push(highscore);
+
+        highScoresArray.sort((a, b) => b.score - a.score);
+
+
+        highScoresArray.splice(3);
+
+        localStorage.setItem("highScoresArray", JSON.stringify(highScoresArray));
+
+        const highScoresList = document.getElementById("hsArry");
+        const highScores = JSON.parse(localStorage.getItem("highScoresArray")) || [];
 
         localStorage.setItem("highscore", JSON.stringify(highscore));
 
