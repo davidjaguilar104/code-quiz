@@ -227,3 +227,4 @@ questionThreeIsFalse.addEventListener("click", function() {
     clearInterval(timeInterval);
     timerEl.remove(); // removes the timer after displaying final score
 })
+
