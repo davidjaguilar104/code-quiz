@@ -179,6 +179,12 @@ startButtonEl.addEventListener("click" , function() {
             timerEl.textContent = 'Time: ' + timeLeft;
             timeLeft--;
         }
+        if(timeLeft === -1) {
+            questionOneEl.remove();
+            questionTwoEl.remove();
+            questionThreeEl.remove();
+            showAllDonePage(); 
+        }
     }, 1000);
 
     startPageEl.remove();
