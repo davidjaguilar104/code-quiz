@@ -5,7 +5,6 @@ var timeInterval;
 
 window.localStorage.getItem("highscore");
 
-console.log("From local storage")
 
 // variable pointing to the timer
 var timerEl = document.getElementById("timer");
@@ -167,7 +166,9 @@ function showAllDonePage() {
     
         event.preventDefault();
 
-        localStorage.setItem("highscore", JSON.stringify(highscore))
+        localStorage.setItem("highscore", JSON.stringify(highscore));
+
+        allDoneEl.remove();
     });
 }
 
